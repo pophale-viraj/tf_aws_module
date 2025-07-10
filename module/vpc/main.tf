@@ -15,7 +15,7 @@ resource "aws_internet_gateway" "igw" {
 }
 
 resource "aws_eip" "nat" {
-  vpc = true
+  vpc = "true"
 }
 
 resource "aws_nat_gateway" "nat" {

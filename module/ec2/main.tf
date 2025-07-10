@@ -27,4 +27,5 @@ data "aws_ami" "amazon-linux-3" {
 resource "aws_instance" "myinstance" {
   ami           = data.aws_ami.amazon-linux-3.id
   instance_type = var.instancetype
+  instance_count = var.instancecount
 }
